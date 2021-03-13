@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Container } from '../../themes/global'
-import { FaMagento } from 'react-icons/fa'
+import { FaFirefox } from 'react-icons/fa'
 
 export const Nav = styled.nav`
     background: #000;
@@ -32,7 +32,7 @@ export const NavLogo = styled.a`
     align-items: center;
 `;
 
-export const NavIcon = styled(FaMagento)`
+export const NavIcon = styled(FaFirefox)`
     margin-right: 0.5rem;
 `;
 
@@ -45,7 +45,7 @@ export const MobileIcon = styled.div`
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
-        font-size: 1.8rem;
+        font-size: 2rem;
         cursor: pointer;
     }
 `;
@@ -72,7 +72,6 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 80px;
-    border-bottom: 2px solid transparent;
     &:hover {
         border-bottom: 3px solid #029e7f;
     }
