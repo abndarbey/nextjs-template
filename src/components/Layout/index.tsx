@@ -1,12 +1,12 @@
 import React from 'react';
-import Navigation from '../Navigation'
+import Navbar from '../Navbar'
 import Copyright from '../Copyright'
 // import styles from './Layout.module.scss'
 
 const Layout = ({children}) => {
     return (
         <>
-            <Navigation />
+            <Navbar />
             <div>
                 <div>
                     {children}    

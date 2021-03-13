@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-import '../styles/globals.scss'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import GlobalStyle from '../themes/global'
+// import '../styles/globals.scss'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Application = ({ Component, pageProps }) => {
   return (
@@ -12,6 +13,7 @@ const Application = ({ Component, pageProps }) => {
               rel="stylesheet">
             </link>
         </Head> */}
+        <GlobalStyle />
         <Component {...pageProps} />
     </>
   )
