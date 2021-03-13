@@ -1,25 +1,23 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Layout from '../components/Layout'
 import BannerSection from '../sections/BannerSection'
 import FeatureSection from '../sections/FeatureSection'
-import FooterSection from '../sections/FooterSection'
 
 const Home = () => {
   return (
-    <div className="container">
+    <>
       <Head>
-        <title>NextJS Template</title>
+        <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
+      
+      <Layout>
         <Header title="Home page!" />
         <BannerSection />
         <FeatureSection />
-      </main>
-
-      <FooterSection />
-    </div>
+      </Layout>
+    </>
   )
 }
 

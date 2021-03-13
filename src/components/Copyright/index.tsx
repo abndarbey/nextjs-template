@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from './Footer.module.scss'
+import styles from './Copyright.module.scss'
 
-const FooterSection = () => {
+const Copyright = () => {
     return (
         <>
             <footer className={styles.footer}>
@@ -11,4 +11,4 @@ const FooterSection = () => {
     )
 }
 
-export default FooterSection
+export default Copyright
