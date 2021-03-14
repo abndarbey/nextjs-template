@@ -3,7 +3,8 @@ import Link from 'next/link'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import { MenuItems } from './MenuItems'
-import { Nav, NavContainer, NavLogo, NavIcon, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarElements'
+import { Nav, NavContainer, NavLogo, NavIcon, MobileIcon, NavMenu, NavItem, NavLinks, NavBtnItem, NavButton } from './NavbarElements'
+import { ButtonPrimary } from '../Button'
 
 const Navbar = () => {
     const [click, setClick] = useState(false)
@@ -36,6 +37,11 @@ const Navbar = () => {
                         </MobileIcon>
                         <NavMenu onClick={handleClick} click={click}>
                             {mapMenus}
+                            <NavBtnItem>
+                                <Link href='/signin'>
+                                    <NavButton dark>Sign In</NavButton>
+                                </Link>
+                            </NavBtnItem>
                         </NavMenu>
                     </NavContainer>
                 </Nav>

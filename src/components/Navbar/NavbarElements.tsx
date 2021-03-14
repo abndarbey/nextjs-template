@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { Container } from '../../themes/global'
+import Container from '../Container'
+import themes from '../../styles/themes'
 import { FaFirefox } from 'react-icons/fa'
 
 export const Nav = styled.nav`
@@ -73,7 +74,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     height: 80px;
     &:hover {
-        border-bottom: 3px solid #029e7f;
+        border-bottom: 3px solid ${themes.primary};
     }
 
     @media screen and (max-width: 960px) {
@@ -99,8 +100,37 @@ export const NavLinks = styled.a`
         padding: 2rem;
         display: table;
         &:hover {
-            color: #029e7f;
+            color: ${themes.primary};
             transition: all 0.3s ease;
         }
+    }
+`;
+
+export const NavBtnItem = styled.li`
+    padding-left: 3px;
+
+    @media screen and (max-width: 960px) {
+        padding-top: 30px;
+    }
+`;
+
+export const NavButton = styled.button`
+    font-weight: 400;
+    border-radius: 4px;
+    white-space: nowrap;
+    outline: none;
+    margin: 3px;
+    text-decoration: none;
+    background: ${themes.primary};
+    border: 2px solid ${themes.primary};
+    color: ${themes.light};
+    padding: 10px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        background: #0ebb98;
+        color: #fff;
+        border: 2px solid #0ebb98;
     }
 `;
