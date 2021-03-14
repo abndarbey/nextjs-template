@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './Error404.module.scss'
 import Header from '../../components/Header'
+import { FullPageContainer } from '../../components/Container'
 
 const Error404Section = () => {
     return (
-        <div className={styles.container}>
+        <FullPageContainer>
             <Header title="404 | Page not found!" />
             <p className="description">
                 Oh no, you’ve found our junior developer’s homepage!
@@ -12,7 +12,7 @@ const Error404Section = () => {
             <p className="description">
                 Despite sleeping on the couch most of the day, our junior web developer still finds time to do some work...
             </p>
-        </div>
+        </FullPageContainer>
     )
 }
 
