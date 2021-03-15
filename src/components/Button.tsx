@@ -10,6 +10,7 @@ export const Button = ({href, children = new String, ...props}) => {
                 <ButtonStyles
                     primary={props.primary}
                     secondary={props.secondary}
+                    info={props.info}
                     warning={props.warning}
                     danger={props.danger}
                     large={props.large}
@@ -60,6 +61,17 @@ const ButtonStyles = styled.button`
     ${({secondary}) => secondary && css`
         background: ${themes.secondary};
         border: 2px solid ${themes.secondary};
+        color: ${themes.light};
+        &:hover {
+            background: ${({dark}) => (dark ? themes.light : themes.dark)};
+            color: ${({dark}) => (dark ? themes.dark : themes.light)};
+            border: 2px solid ${({dark}) => (dark ? themes.light : themes.dark)};
+        }
+    `};
+
+    ${({info}) => info && css`
+        background: ${themes.info};
+        border: 2px solid ${themes.info};
         color: ${themes.light};
         &:hover {
             background: ${({dark}) => (dark ? themes.light : themes.dark)};
@@ -119,6 +131,17 @@ const ButtonStyles = styled.button`
                 background: ${themes.secondary};
                 color: ${themes.light};
                 border: 2px solid ${themes.secondary};
+            }
+        `};
+
+        ${({info}) => info && css`
+            background: ${themes.light};
+            border: 2px solid ${themes.info};
+            color: ${themes.dark};
+            &:hover {
+                background: ${themes.info};
+                color: ${themes.light};
+                border: 2px solid ${themes.info};
             }
         `};
 

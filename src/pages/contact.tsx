@@ -29,7 +29,7 @@ export const contactObjOne = {
   lightText: true,
   lightTextDesc: true,
   topLine: 'Marketing Agency',
-  headline: 'This is an a Contact Page!',
+  headline: 'This is a Contact Page!',
   description:
     'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
   buttonLabel: 'Get Started',

@@ -1,23 +1,14 @@
 import React from 'react';
 import  Button from '../../components/Button';
+import  Cards from '../../components/Cards';
 import { AiFillThunderbolt } from 'react-icons/ai';
-import { GiCrystalBars } from 'react-icons/gi';
-import { GiCutDiamond, GiRock } from 'react-icons/gi';
-import { GiFloatingCrystal } from 'react-icons/gi';
+import { GiCrystalBars, GiFloatingCrystal, GiCutDiamond, GiRock } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import {
   PricingSection,
   PricingWrapper,
   PricingHeading,
-  PricingContainer,
-  PricingCard,
-  PricingCardInfo,
-  PricingCardIcon,
-  PricingCardPlan,
-  PricingCardCost,
-  PricingCardLength,
-  PricingCardFeatures,
-  PricingCardFeature
+  PricingContainer
 } from './PricingElements';
 
 export const Pricing = () => {
@@ -25,56 +16,38 @@ export const Pricing = () => {
     <IconContext.Provider value={{ color: '#a9b3c1', size: '64' }}>
       <PricingSection>
         <PricingWrapper>
-          <PricingHeading>Our Services</PricingHeading>
+          <PricingHeading>Explore Our Plans</PricingHeading>
           <PricingContainer>
-            <PricingCard to='/sign-up'>
-              <PricingCardInfo>
-                <PricingCardIcon>
-                  <GiRock />
-                </PricingCardIcon>
-                <PricingCardPlan>Starter Pack</PricingCardPlan>
-                <PricingCardCost>$99.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>100 New Users</PricingCardFeature>
-                  <PricingCardFeature>$10,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Retargeting analytics</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button dark href='/'>Choose Plan</Button>
-              </PricingCardInfo>
-            </PricingCard>
-            <PricingCard to='/sign-up'>
-              <PricingCardInfo>
-                <PricingCardIcon>
-                  <GiCrystalBars />
-                </PricingCardIcon>
-                <PricingCardPlan>Gold Rush</PricingCardPlan>
-                <PricingCardCost>$299.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>1000 New Users</PricingCardFeature>
-                  <PricingCardFeature>$50,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Lead Gen Analytics</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button dark href='/'>Choose Plan</Button>
-              </PricingCardInfo>
-            </PricingCard>
-            <PricingCard to='/sign-up'>
-              <PricingCardInfo>
-                <PricingCardIcon>
-                  <GiCutDiamond />
-                </PricingCardIcon>
-                <PricingCardPlan>Diamond Kings</PricingCardPlan>
-                <PricingCardCost>$999.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>Unlimited Users</PricingCardFeature>
-                  <PricingCardFeature>Unlimited Budget</PricingCardFeature>
-                  <PricingCardFeature>24/7 Support</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button dark href='/'>Choose Plan</Button>
-              </PricingCardInfo>
-            </PricingCard>
+            <Cards
+              plan={'Starter Pack'}
+              cost={'$99.99'}
+              length={'per month'}
+              features={['100 New Users', '$10,000 Budget', 'Retargeting analytics']}
+              buttonLabel={'Choose Plan'}
+              href={'/about'}
+              dark={true}
+              icon={<GiFloatingCrystal />}
+            />
+            <Cards
+              plan={'Gold Rush'}
+              cost={'$299.99'}
+              length={'per month'}
+              features={['1000 New Users', '$50,000 Budget', 'Lead Gen Analytics']}
+              buttonLabel={'Choose Plan'}
+              href={'/services'}
+              dark={true}
+              icon={<GiCrystalBars />}
+            />
+            <Cards
+              plan={'Diamond Kings'}
+              cost={'$999.99'}
+              length={'per month'}
+              features={['Unlimited Users', 'Unlimited Budget', '24/7 Support']}
+              buttonLabel={'Choose Plan'}
+              href={'/contact'}
+              dark={true}
+              icon={<GiCutDiamond />}
+            />
           </PricingContainer>
         </PricingWrapper>
       </PricingSection>

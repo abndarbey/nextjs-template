@@ -29,7 +29,7 @@ export const servicesObjOne = {
   lightText: true,
   lightTextDesc: true,
   topLine: 'Marketing Agency',
-  headline: 'This is an a Service Page!',
+  headline: 'This is a Service Page!',
   description:
     'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
   buttonLabel: 'Get Started',
