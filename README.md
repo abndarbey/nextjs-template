@@ -6,6 +6,7 @@
 
 ## Live Demo
 `nextjstemplate.netlify.app`
+[![Live Demo](https://www.netlify.com/img/deploy/button.svg)](nextjstemplate.netlify.app)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ed50f56e-4fc2-4c98-8b66-1e5074c6f3d3/deploy-status)](https://app.netlify.com/sites/next-starter/deploys)
 
@@ -35,7 +36,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 **Option one:** One-click deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/abndarbey/nextjs-template&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex)
 
 **Option two:** Manual clone
 
