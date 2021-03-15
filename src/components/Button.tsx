@@ -36,8 +36,8 @@ const ButtonStyles = styled.button`
     cursor: pointer;
     padding: ${({large}) => (large ? '12px 64px' : '10px 50px')};
     font-size: ${({large}) => (large ? '20px' : '16px')};
-    background: ${themes.primary};
-    border: 2px solid ${themes.primary};
+    background: ${themes.secondary};
+    border: 2px solid ${themes.secondary};
     color: ${themes.light};
     &:hover {
         transition: all 0.3s ease-in-out;

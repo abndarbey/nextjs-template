@@ -1,9 +1,10 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import themes from '../../styles/themes'
 
 export const FeatureSec = styled.div`
   color: #fff;
   padding: 160px 0;
-  background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
+  background: ${({ lightBg }) => (lightBg ? themes.light : themes.primary)};
 `;
 
 export const FeatureRow = styled.div`

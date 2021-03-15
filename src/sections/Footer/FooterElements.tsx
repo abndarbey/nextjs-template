@@ -104,7 +104,7 @@ export const FooterLink = styled.a`
   margin-bottom: 0.5rem;
   cursor: pointer;
   &:hover {
-    color: ${themes.primary};
+    color: ${themes.secondary};
     transition: 0.3s ease-out;
   }
 `;
@@ -157,7 +157,7 @@ export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
   &:hover {
-    color: ${themes.primary};
+    color: ${themes.secondary};
     transition: 0.3s ease-out;
   }
 `;

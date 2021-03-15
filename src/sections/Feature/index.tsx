@@ -38,7 +38,7 @@ export const Feature = ({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Button large primary={primary} dark={!lightBg} href='/signup'>
+                <Button dark={!lightBg} href='/signup'>
                 {buttonLabel}
                 </Button>
               </TextWrapper>

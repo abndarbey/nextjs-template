@@ -38,8 +38,8 @@ export const Banner = ({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Button large primary={primary} dark={!lightBg} href='/signup'>
-                {buttonLabel}
+                <Button large dark={!lightBg} href='/signup'>
+                  {buttonLabel}
                 </Button>
               </TextWrapper>
             </BannerColumn>

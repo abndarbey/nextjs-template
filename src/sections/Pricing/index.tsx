@@ -40,7 +40,7 @@ export const Pricing = () => {
                   <PricingCardFeature>$10,000 Budget</PricingCardFeature>
                   <PricingCardFeature>Retargeting analytics</PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary dark href='/'>Choose Plan</Button>
+                <Button dark href='/'>Choose Plan</Button>
               </PricingCardInfo>
             </PricingCard>
             <PricingCard to='/sign-up'>
@@ -56,7 +56,7 @@ export const Pricing = () => {
                   <PricingCardFeature>$50,000 Budget</PricingCardFeature>
                   <PricingCardFeature>Lead Gen Analytics</PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary dark href='/'>Choose Plan</Button>
+                <Button dark href='/'>Choose Plan</Button>
               </PricingCardInfo>
             </PricingCard>
             <PricingCard to='/sign-up'>
@@ -72,7 +72,7 @@ export const Pricing = () => {
                   <PricingCardFeature>Unlimited Budget</PricingCardFeature>
                   <PricingCardFeature>24/7 Support</PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary dark href='/'>Choose Plan</Button>
+                <Button dark href='/'>Choose Plan</Button>
               </PricingCardInfo>
             </PricingCard>
           </PricingContainer>

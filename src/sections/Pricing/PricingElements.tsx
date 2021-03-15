@@ -6,7 +6,7 @@ export const PricingSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: ${themes.primary};
+  background: ${themes.secondary};
 `;
 
 export const PricingWrapper = styled.div`

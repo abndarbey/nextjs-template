@@ -14,11 +14,11 @@ const Home = () => {
       
       <Layout>
         <Banner {...homeObjOne}/>
-        <Banner {...homeObjTwo}/>
-        <Banner {...homeObjThree}/>
-        <Banner {...homeObjFour}/>
+        <Feature {...homeObjTwo}/>
+        <Feature {...homeObjThree}/>
+        <Feature {...homeObjFour}/>
+        <Feature {...homeObjThree}/>
         <Pricing />
-        {/* <Feature /> */}
       </Layout>
     </>
   )

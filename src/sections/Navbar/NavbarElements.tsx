@@ -74,7 +74,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     height: 80px;
     &:hover {
-        border-bottom: 3px solid ${themes.primary};
+        border-bottom: 3px solid ${themes.secondary};
     }
 
     @media screen and (max-width: 960px) {
@@ -100,7 +100,7 @@ export const NavLinks = styled.a`
         padding: 2rem;
         display: table;
         &:hover {
-            color: ${themes.primary};
+            color: ${themes.secondary};
             transition: all 0.3s ease;
         }
     }
@@ -121,8 +121,8 @@ export const NavButton = styled.button`
     outline: none;
     margin: 3px;
     text-decoration: none;
-    background: ${themes.primary};
-    border: 2px solid ${themes.primary};
+    background: ${themes.secondary};
+    border: 2px solid ${themes.secondary};
     color: ${themes.light};
     padding: 10px 50px;
     font-size: 16px;
