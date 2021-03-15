@@ -14,7 +14,7 @@ const Contact = () => {
       
       <Layout>
         <Header title="Contact page!" />
-        <BannerSection />
+        {/* <BannerSection /> */}
         <FeatureSection />
       </Layout>
     </>

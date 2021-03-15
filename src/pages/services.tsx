@@ -14,7 +14,7 @@ const Services = () => {
       
       <Layout>
         <Header title="Services page!" />
-        <BannerSection />
+        {/* <BannerSection /> */}
         <FeatureSection />
       </Layout>
     </>

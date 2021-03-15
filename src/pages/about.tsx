@@ -14,7 +14,7 @@ const About = () => {
       
       <Layout>
         <Header title="About page!" />
-        <BannerSection />
+        {/* <BannerSection /> */}
         <FeatureSection />
       </Layout>
     </>
