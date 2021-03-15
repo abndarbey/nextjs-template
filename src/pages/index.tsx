@@ -3,6 +3,8 @@ import Header from '../components/Header'
 import Layout from '../components/Layout'
 import BannerSection from '../sections/BannerSection'
 import FeatureSection from '../sections/FeatureSection'
+import PricingSection from '../sections/PricingSection'
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from '../data/homeBanner';
 
 const Home = () => {
   return (
@@ -13,9 +15,12 @@ const Home = () => {
       </Head>
       
       <Layout>
-        <Header title="Home page!" />
-        <BannerSection />
-        <FeatureSection />
+        <BannerSection {...homeObjOne}/>
+        <BannerSection {...homeObjTwo}/>
+        <BannerSection {...homeObjThree}/>
+        <BannerSection {...homeObjFour}/>
+        <PricingSection />
+        {/* <FeatureSection /> */}
       </Layout>
     </>
   )

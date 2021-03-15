@@ -4,7 +4,7 @@ import themes from '../../styles/themes'
 import { FaFirefox } from 'react-icons/fa'
 
 export const Nav = styled.nav`
-    background: #000;
+    background: ${themes.dark};
     height: 80px;
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ export const NavMenu = styled.ul`
         left: ${({click}) => (click ? 0 : `-100%`)};
         opacity: 1;
         transition: all 0.5s ease;
-        background: #000;
+        background: ${themes.dark};
     }
 `;
 
