@@ -3,6 +3,8 @@ import Layout from '../sections/Layout'
 import Banner from '../sections/Banner'
 import Feature from '../sections/Feature'
 import Pricing from '../sections/Pricing'
+import { GiFloatingCrystal, GiCutDiamond } from 'react-icons/gi';
+import { AiFillThunderbolt } from 'react-icons/ai';
 
 const Home = () => {
   return (
@@ -18,7 +20,7 @@ const Home = () => {
         <Feature {...homeObjThree}/>
         <Feature {...homeObjFour}/>
         <Feature {...homeObjThree}/>
-        <Pricing />
+        <Pricing {...pricingObject}/>
       </Layout>
     </>
   )
@@ -27,7 +29,7 @@ const Home = () => {
 export default Home
 
 // Home Page Data
-export const homeObjOne = {
+const homeObjOne = {
   primary: true,
   lightBg: false,
   lightTopLine: true,
@@ -44,7 +46,7 @@ export const homeObjOne = {
   start: ''
 };
 
-export const homeObjTwo = {
+const homeObjTwo = {
   primary: false,
   lightBg: true,
   lightTopLine: false,
@@ -62,7 +64,7 @@ export const homeObjTwo = {
   start: 'true'
 };
 
-export const homeObjThree = {
+const homeObjThree = {
   primary: true,
   lightBg: false,
   lightTopLine: true,
@@ -79,7 +81,7 @@ export const homeObjThree = {
   start: ''
 };
 
-export const homeObjFour = {
+const homeObjFour = {
   primary: true,
   lightBg: true,
   lightTopLine: false,
@@ -94,4 +96,40 @@ export const homeObjFour = {
   img: require('../assets/images/svg-3.svg'),
   alt: 'Vault',
   start: 'true'
+};
+
+const pricingObject = {
+  heading: 'Explore Our Plans',
+  cardData: [
+    {
+      plan: 'Starter Pack',
+      cost: '$99.99',
+      length: 'per month',
+      features: ['100 New Users', '$10,000 Budget', 'Retargeting analytics'],
+      buttonLabel: 'Choose Plan',
+      href: '/about',
+      dark: true,
+      icon: <AiFillThunderbolt />,
+    },
+    {
+      plan: 'Starter Pack',
+      cost: '$99.99',
+      length: 'per month',
+      features: ['100 New Users', '$10,000 Budget', 'Retargeting analytics'],
+      buttonLabel: 'Choose Plan',
+      href: '/about',
+      dark: true,
+      icon: <GiFloatingCrystal />,
+    },
+    {
+      plan: 'Starter Pack',
+      cost: '$99.99',
+      length: 'per month',
+      features: ['100 New Users', '$10,000 Budget', 'Retargeting analytics'],
+      buttonLabel: 'Choose Plan',
+      href: '/about',
+      dark: true,
+      icon: <GiCutDiamond />,
+    },
+  ],
 };
