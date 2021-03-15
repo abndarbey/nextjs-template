@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Header from '../components/Header'
-import Layout from '../components/Layout'
-import BannerSection from '../sections/BannerSection'
-import FeatureSection from '../sections/FeatureSection'
+import Layout from '../sections/Layout'
+import Banner from '../sections/Banner'
+import Feature from '../sections/Feature'
 
 const Contact = () => {
   return (
@@ -13,12 +12,29 @@ const Contact = () => {
       </Head>
       
       <Layout>
-        <Header title="Contact page!" />
-        {/* <BannerSection /> */}
-        <FeatureSection />
+        {/* <Banner /> */}
+        <Feature {...contactObjOne} />
       </Layout>
     </>
   )
 }
 
 export default Contact
+
+// Contact Page Data
+export const contactObjOne = {
+  primary: true,
+  lightBg: false,
+  lightTopLine: true,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Marketing Agency',
+  headline: 'This is an a Contact Page!',
+  description:
+    'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
+  buttonLabel: 'Get Started',
+  imgStart: '',
+  img: require('../assets/images/svg-1.svg'),
+  alt: 'Credit Card',
+  start: ''
+};

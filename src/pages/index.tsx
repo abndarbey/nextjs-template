@@ -1,10 +1,8 @@
 import Head from 'next/head'
-import Header from '../components/Header'
-import Layout from '../components/Layout'
-import BannerSection from '../sections/BannerSection'
-import FeatureSection from '../sections/FeatureSection'
-import PricingSection from '../sections/PricingSection'
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from '../data/homeBanner';
+import Layout from '../sections/Layout'
+import Banner from '../sections/Banner'
+import Feature from '../sections/Feature'
+import Pricing from '../sections/Pricing'
 
 const Home = () => {
   return (
@@ -15,15 +13,85 @@ const Home = () => {
       </Head>
       
       <Layout>
-        <BannerSection {...homeObjOne}/>
-        <BannerSection {...homeObjTwo}/>
-        <BannerSection {...homeObjThree}/>
-        <BannerSection {...homeObjFour}/>
-        <PricingSection />
-        {/* <FeatureSection /> */}
+        <Banner {...homeObjOne}/>
+        <Banner {...homeObjTwo}/>
+        <Banner {...homeObjThree}/>
+        <Banner {...homeObjFour}/>
+        <Pricing />
+        {/* <Feature /> */}
       </Layout>
     </>
   )
 }
 
 export default Home
+
+// Home Page Data
+export const homeObjOne = {
+  primary: true,
+  lightBg: false,
+  lightTopLine: true,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Marketing Agency',
+  headline: 'Lead Generation Specialist for Online Businesses',
+  description:
+    'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
+  buttonLabel: 'Get Started',
+  imgStart: '',
+  img: require('../assets/images/svg-1.svg'),
+  alt: 'Credit Card',
+  start: ''
+};
+
+export const homeObjTwo = {
+  primary: false,
+  lightBg: true,
+  lightTopLine: false,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Sarah Jeni',
+  headline:
+    'Ultra helped me increase my revenue by over 3X in less than 3 months!',
+  description:
+    "Their team is wonderful! I can't believe I didn't start working with them earlier.",
+  buttonLabel: 'View Case Study',
+  imgStart: 'start',
+  img: require('../assets/images/profile.jpg'),
+  alt: 'Vault',
+  start: 'true'
+};
+
+export const homeObjThree = {
+  primary: true,
+  lightBg: false,
+  lightTopLine: true,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Instant Setup',
+  headline: 'Extremely quick onboarding process',
+  description:
+    "Once you've joined, our team of specialist will reach out to you and get you set up in minutes.",
+  buttonLabel: 'Learn More',
+  imgStart: '',
+  img: require('../assets/images/svg-2.svg'),
+  alt: 'Vault',
+  start: ''
+};
+
+export const homeObjFour = {
+  primary: true,
+  lightBg: true,
+  lightTopLine: false,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Secure Database',
+  headline: 'All your data is stored on our secure server',
+  description:
+    'You will never have to worry about your information getting leaked. Our team of security experts will ensure your records are kept safe.',
+  buttonLabel: 'Sign Up Now',
+  imgStart: 'start',
+  img: require('../assets/images/svg-3.svg'),
+  alt: 'Vault',
+  start: 'true'
+};

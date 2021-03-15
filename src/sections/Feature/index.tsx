@@ -2,18 +2,18 @@ import React from 'react'
 import Container from '../../components/Container'
 import Button from '../../components/Button'
 import {
-  BannerSec,
-  BannerRow,
-  BannerColumn,
+  FeatureSec,
+  FeatureRow,
+  FeatureColumn,
   TextWrapper,
   TopLine,
   Heading,
   Subtitle,
   ImgWrapper,
   Img
-} from './BannerElements';
+} from './FeatureElements';
 
-function BannerSection({
+export const Feature = ({
   primary,
   lightBg,
   topLine,
@@ -27,13 +27,13 @@ function BannerSection({
   alt,
   imgStart,
   start
-}) {
+}) => {
   return (
     <>
-      <BannerSec lightBg={lightBg}>
+      <FeatureSec lightBg={lightBg}>
         <Container>
-          <BannerRow imgStart={imgStart}>
-            <BannerColumn>
+          <FeatureRow imgStart={imgStart}>
+            <FeatureColumn>
               <TextWrapper>
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
@@ -42,17 +42,17 @@ function BannerSection({
                 {buttonLabel}
                 </Button>
               </TextWrapper>
-            </BannerColumn>
-            <BannerColumn>
+            </FeatureColumn>
+            <FeatureColumn>
               <ImgWrapper start={start}>
                 <Img src={img} alt={alt} />
               </ImgWrapper>
-            </BannerColumn>
-          </BannerRow>
+            </FeatureColumn>
+          </FeatureRow>
         </Container>
-      </BannerSec>
+      </FeatureSec>
     </>
   );
 }
 
-export default BannerSection;
+export default Feature;
