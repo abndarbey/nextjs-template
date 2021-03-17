@@ -1,8 +1,6 @@
 import React from 'react';
-import  Button from '../../components/Button';
-import  Cards from '../../components/Cards';
-import { AiFillThunderbolt } from 'react-icons/ai';
-import { GiCrystalBars, GiFloatingCrystal, GiCutDiamond, GiRock } from 'react-icons/gi';
+import  Card from '../../components/Card';
+import { GiCrystalBars, GiFloatingCrystal, GiCutDiamond } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import {
   PricingSection,
@@ -18,7 +16,7 @@ export const Pricing = () => {
         <PricingWrapper>
           <PricingHeading>Explore Our Plans</PricingHeading>
           <PricingContainer>
-            <Cards
+            <Card
               plan={'Starter Pack'}
               cost={'$99.99'}
               length={'per month'}
@@ -28,7 +26,7 @@ export const Pricing = () => {
               dark={true}
               icon={<GiFloatingCrystal />}
             />
-            <Cards
+            <Card
               plan={'Gold Rush'}
               cost={'$299.99'}
               length={'per month'}
@@ -38,7 +36,7 @@ export const Pricing = () => {
               dark={true}
               icon={<GiCrystalBars />}
             />
-            <Cards
+            <Card
               plan={'Diamond Kings'}
               cost={'$999.99'}
               length={'per month'}

@@ -1,33 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
 import styled, { css } from 'styled-components'
-import themes from '../styles/themes'
+import themes from '../../styles/themes'
 
-export const Button = ({href, children = new String, ...props}) => {
-    return (
-        <>
-            <Link href={href} passHref>
-                <ButtonStyles
-                    primary={props.primary}
-                    secondary={props.secondary}
-                    info={props.info}
-                    warning={props.warning}
-                    danger={props.danger}
-                    large={props.large}
-                    dark={props.dark}
-                    outline={props.outline}
-                >
-                    {children}
-                </ButtonStyles>
-            </Link>
-        </>
-    )
-}
-
-export default Button
-
-// Button Styles
-const ButtonStyles = styled.button`
+export const ButtonStyles = styled.button`
     font-weight: 400;
     border-radius: 4px;
     white-space: nowrap;

@@ -12,6 +12,10 @@ export const MenuItems = [
         url: '/services'
     },
     {
+        title: 'Company',
+        url: '/company'
+    },
+    {
         title: 'Contact',
         url: '/contact'
     },

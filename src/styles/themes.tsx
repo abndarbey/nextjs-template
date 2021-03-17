@@ -7,6 +7,7 @@ export const themes = {
     dark: '#101522',
     light: '#f5f5f5',
     grey: '#e0e0e0',
+    darkgrey: '#242424',
 }
 
 export default themes

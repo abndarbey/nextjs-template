@@ -1,5 +1,5 @@
 import React from 'react';
-import  Cards from '../../components/Cards';
+import  Card from '../../components/Card';
 import { IconContext } from 'react-icons/lib';
 import {
   PricingSection,
@@ -11,7 +11,7 @@ import {
 export const Pricing = ({heading, cardData}) => {
   const mapCards = cardData.map((item, index) => {
     return (
-      <Cards key={index}
+      <Card key={index}
         plan={item.plan}
         cost={item.cost}
         length={item.length}
