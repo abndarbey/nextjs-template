@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import Container from '../../components/Container'
 import themes from '../../styles/themes'
 import { FaFirefox } from 'react-icons/fa'
+import { Container } from '../../components/Containers'
 
 export const Nav = styled.nav`
-    background: ${themes.dark};
+    background: ${themes.primary};
     height: 80px;
     display: flex;
     justify-content: center;

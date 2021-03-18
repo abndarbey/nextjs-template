@@ -35,5 +35,3 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
         </>
     )
 }
-
-export default Button

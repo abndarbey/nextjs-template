@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import themes from '../../styles/themes'
-import Container from '../../components/Container'
+import { Container } from '../../components/Containers'
 
 export const Nav = styled.nav`
     background: ${themes.primary};

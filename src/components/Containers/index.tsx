@@ -22,5 +22,3 @@ export const FullPageContainer = styled.div`
     justify-content: center;
     align-items: center;
 `;
-
-export default Container

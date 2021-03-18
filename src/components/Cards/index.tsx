@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Button from '../Button'
+import { Button } from '../Buttons'
 import {
   CardWrapper,
   CardInfo,
@@ -23,7 +23,7 @@ export interface CardProps {
   icon: React.ReactNode
 }
 
-export const Card: React.FC<CardProps> = (props: CardProps) => {
+export const PricingCard: React.FC<CardProps> = (props: CardProps) => {
     const mapFeatures = props.features.map((item, index) => {
         return (
             <CardFeature key={index}>{item}</CardFeature>
@@ -43,5 +43,3 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
         </CardWrapper>
     )
 }
-
-export default Card

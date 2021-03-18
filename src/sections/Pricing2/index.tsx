@@ -1,5 +1,5 @@
 import React from 'react';
-import  Card from '../../components/Card';
+import  { PricingCard } from '../../components/Cards';
 import { GiCrystalBars, GiFloatingCrystal, GiCutDiamond } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import {
@@ -16,7 +16,7 @@ export const Pricing = () => {
         <PricingWrapper>
           <PricingHeading>Explore Our Plans</PricingHeading>
           <PricingContainer>
-            <Card
+            <PricingCard
               plan={'Starter Pack'}
               cost={'$99.99'}
               length={'per month'}
@@ -26,7 +26,7 @@ export const Pricing = () => {
               dark={true}
               icon={<GiFloatingCrystal />}
             />
-            <Card
+            <PricingCard
               plan={'Gold Rush'}
               cost={'$299.99'}
               length={'per month'}
@@ -36,7 +36,7 @@ export const Pricing = () => {
               dark={true}
               icon={<GiCrystalBars />}
             />
-            <Card
+            <PricingCard
               plan={'Diamond Kings'}
               cost={'$999.99'}
               length={'per month'}

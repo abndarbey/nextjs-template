@@ -1,5 +1,5 @@
 import React from 'react'
-import { FullPageContainer } from '../../components/Container'
+import { FullPageContainer } from '../../components/Containers'
 import { Title, Description, TextWrapper, Heading, Subtitle} from './ErrorElements'
 
 const ErrorSection = ({title, desc}) => {

@@ -8,6 +8,7 @@ export const themes = {
     light: '#f5f5f5',
     grey: '#e0e0e0',
     darkgrey: '#242424',
+    royalblue: '#003473',
 }
 
 export default themes
