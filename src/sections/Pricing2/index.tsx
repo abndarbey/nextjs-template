@@ -30,7 +30,7 @@ export const Pricing = () => {
               plan={'Gold Rush'}
               cost={'$299.99'}
               length={'per month'}
-              features={['1000 New Users', '$50,000 Budget', 'Lead Gen Analytics']}
+              features={['Unlimited Users', '$Unlimited Budget', '24/7 Support']}
               buttonLabel={'Choose Plan'}
               href={'/services'}
               dark={true}

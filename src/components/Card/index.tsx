@@ -16,11 +16,11 @@ export interface CardProps {
   plan: string
   cost: string
   length: string
-  features: [string]
+  features: string[]
   buttonLabel: string
   href: string
   dark: boolean
-  icon: React.Component
+  icon: React.ReactNode
 }
 
 export const Card: React.FC<CardProps> = (props: CardProps) => {
